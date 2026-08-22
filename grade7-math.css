@@ -526,3 +526,38 @@ body {
     }
 
 }
+
+/* ================================
+   5 QUESTIONS TO PRACTICE
+================================ */
+
+.questions-box {
+    margin-top: 24px;
+    padding: 20px 22px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.questions-box h4 {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #1e293b;
+}
+
+.questions-box ol {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.questions-box li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.questions-box li:last-child {
+    margin-bottom: 0;
+}
