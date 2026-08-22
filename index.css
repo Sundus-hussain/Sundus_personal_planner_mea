@@ -8,19 +8,14 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-
     background: #0f172a;
-
     color: #e2e8f0;
-
     min-height: 100vh;
 }
 
@@ -30,9 +25,7 @@ body {
 ========================================= */
 
 .sidebar {
-
     position: fixed;
-
     left: 0;
     top: 0;
     bottom: 0;
@@ -43,7 +36,7 @@ body {
 
     border-right: 1px solid #1e293b;
 
-    padding: 28px 18px;
+    padding: 25px 18px;
 
     display: flex;
     flex-direction: column;
@@ -55,31 +48,24 @@ body {
 /* BRAND */
 
 .brand {
-
     display: flex;
-
     align-items: center;
-
     gap: 12px;
 
-    padding: 0 10px 30px;
+    padding: 0 10px 25px;
 
     border-bottom: 1px solid #1e293b;
 }
 
-
 .brand-icon {
-
     width: 42px;
     height: 42px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     background: #8b5cf6;
-
     color: white;
 
     border-radius: 12px;
@@ -89,26 +75,20 @@ body {
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
 }
 
-
 .brand h2 {
-
     font-family: "Arima Madurai", cursive;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 22px;
 }
 
-
 .brand span {
-
     display: block;
 
     color: #64748b;
 
     font-size: 11px;
-
-    margin-top: -2px;
 }
 
 
@@ -117,13 +97,10 @@ body {
 ========================================= */
 
 .menu-section {
-
-    margin-top: 28px;
+    margin-top: 27px;
 }
 
-
 .menu-title {
-
     font-size: 10px;
 
     font-weight: 700;
@@ -135,11 +112,8 @@ body {
     padding: 0 12px 10px;
 }
 
-
 .menu-item {
-
     display: flex;
-
     align-items: center;
 
     gap: 13px;
@@ -159,27 +133,17 @@ body {
     transition: 0.25s;
 }
 
-
 .menu-item i {
-
     width: 18px;
-
     text-align: center;
-
-    font-size: 14px;
 }
-
 
 .menu-item:hover {
-
     background: #1e293b;
-
-    color: #ffffff;
+    color: white;
 }
 
-
 .menu-item.active {
-
     background: rgba(139, 92, 246, 0.15);
 
     color: #c084fc;
@@ -195,7 +159,6 @@ body {
 ========================================= */
 
 .sidebar-bottom {
-
     margin-top: auto;
 
     padding-top: 18px;
@@ -203,33 +166,25 @@ body {
     border-top: 1px solid #1e293b;
 }
 
-
 .profile-link {
-
     display: flex;
 
     align-items: center;
 
     gap: 10px;
 
-    text-decoration: none;
-
     padding: 8px;
 
-    border-radius: 10px;
+    text-decoration: none;
 
-    transition: 0.2s;
+    border-radius: 10px;
 }
 
-
 .profile-link:hover {
-
     background: #1e293b;
 }
 
-
 .profile-avatar {
-
     width: 35px;
     height: 35px;
 
@@ -247,9 +202,7 @@ body {
     font-weight: 600;
 }
 
-
 .profile-info strong {
-
     display: block;
 
     color: #e2e8f0;
@@ -257,9 +210,7 @@ body {
     font-size: 12px;
 }
 
-
 .profile-info span {
-
     color: #64748b;
 
     font-size: 11px;
@@ -271,7 +222,6 @@ body {
 ========================================= */
 
 .main-content {
-
     margin-left: 250px;
 
     min-height: 100vh;
@@ -281,12 +231,11 @@ body {
 
 
 /* =========================================
-   TOPBAR
+   TOP BAR
 ========================================= */
 
 .topbar {
-
-    height: 75px;
+    min-height: 75px;
 
     display: flex;
 
@@ -297,15 +246,11 @@ body {
     border-bottom: 1px solid #1e293b;
 }
 
-
 .mobile-brand {
-
     display: none;
 }
 
-
 .date-display {
-
     display: flex;
 
     align-items: center;
@@ -317,25 +262,19 @@ body {
     font-size: 12px;
 }
 
-
 .date-display > i {
-
     font-size: 19px;
 
     color: #8b5cf6;
 }
 
-
 .date-display span {
-
     display: block;
 
     font-size: 11px;
 }
 
-
 .date-display strong {
-
     display: block;
 
     color: #cbd5e1;
@@ -343,8 +282,6 @@ body {
     font-size: 12px;
 
     font-weight: 500;
-
-    margin-top: 2px;
 }
 
 
@@ -353,13 +290,10 @@ body {
 ========================================= */
 
 .welcome {
-
-    padding: 38px 0 30px;
+    padding: 35px 0 30px;
 }
 
-
 .welcome-label {
-
     color: #a78bfa;
 
     font-size: 11px;
@@ -371,9 +305,7 @@ body {
     margin-bottom: 7px;
 }
 
-
 .welcome h1 {
-
     font-family: "Arima Madurai", cursive;
 
     font-size: 34px;
@@ -383,9 +315,7 @@ body {
     margin-bottom: 7px;
 }
 
-
-.welcome > div > p:last-child {
-
+.welcome > p:last-child {
     color: #94a3b8;
 
     font-size: 14px;
@@ -401,7 +331,6 @@ body {
 ========================================= */
 
 .stats-grid {
-
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -411,9 +340,7 @@ body {
     margin-bottom: 35px;
 }
 
-
 .stat-card {
-
     background: #111827;
 
     border: 1px solid #1e293b;
@@ -429,9 +356,7 @@ body {
     gap: 15px;
 }
 
-
 .stat-icon {
-
     width: 44px;
     height: 44px;
 
@@ -441,45 +366,33 @@ body {
 
     align-items: center;
     justify-content: center;
-
-    font-size: 17px;
 }
 
-
 .stat-icon.purple {
-
     background: rgba(139, 92, 246, 0.12);
 
     color: #c084fc;
 }
 
-
 .stat-icon.green {
-
     background: rgba(34, 197, 94, 0.1);
 
     color: #86efac;
 }
 
-
 .stat-icon.blue {
-
     background: rgba(59, 130, 246, 0.1);
 
     color: #93c5fd;
 }
 
-
 .stat-icon.orange {
-
     background: rgba(249, 115, 22, 0.1);
 
     color: #fdba74;
 }
 
-
 .stat-card span {
-
     display: block;
 
     color: #64748b;
@@ -489,9 +402,7 @@ body {
     margin-bottom: 4px;
 }
 
-
 .stat-card strong {
-
     display: block;
 
     color: #f8fafc;
@@ -501,17 +412,14 @@ body {
 
 
 /* =========================================
-   SECTION HEADING
+   SECTION
 ========================================= */
 
 .dashboard-section {
-
     margin-bottom: 35px;
 }
 
-
 .section-heading {
-
     display: flex;
 
     justify-content: space-between;
@@ -521,9 +429,7 @@ body {
     margin-bottom: 15px;
 }
 
-
 .section-heading h2 {
-
     color: #f8fafc;
 
     font-size: 20px;
@@ -531,17 +437,13 @@ body {
     margin-bottom: 4px;
 }
 
-
 .section-heading p {
-
     color: #64748b;
 
     font-size: 12px;
 }
 
-
 .view-all {
-
     color: #a78bfa;
 
     text-decoration: none;
@@ -550,23 +452,20 @@ body {
 
     display: flex;
 
-    align-items: center;
-
     gap: 7px;
 }
 
-
 .view-all:hover {
-
     color: #c084fc;
 }
 
 
 /* =========================================
-   CLASSES TABLE
+   TABLE
 ========================================= */
 
 .classes-table-wrapper {
+    width: 100%;
 
     background: #111827;
 
@@ -575,21 +474,19 @@ body {
     border-radius: 13px;
 
     overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
 }
 
-
 .classes-table {
-
     width: 100%;
 
     border-collapse: collapse;
 
-    min-width: 760px;
+    min-width: 720px;
 }
 
-
 .classes-table th {
-
     text-align: left;
 
     padding: 15px 18px;
@@ -603,13 +500,9 @@ body {
     text-transform: uppercase;
 
     letter-spacing: 0.8px;
-
-    font-weight: 600;
 }
 
-
 .classes-table td {
-
     padding: 14px 18px;
 
     border-top: 1px solid #1e293b;
@@ -617,25 +510,16 @@ body {
     font-size: 13px;
 }
 
-
-.classes-table tbody tr {
-
-    transition: 0.2s;
-}
-
-
 .classes-table tbody tr:hover {
-
     background: rgba(139, 92, 246, 0.035);
 }
 
 
 /* =========================================
-   SUBJECT CELL
+   SUBJECT
 ========================================= */
 
 .subject-cell {
-
     display: flex;
 
     align-items: center;
@@ -643,9 +527,7 @@ body {
     gap: 12px;
 }
 
-
 .subject-icon {
-
     width: 38px;
     height: 38px;
 
@@ -659,41 +541,31 @@ body {
     justify-content: center;
 }
 
-
 .subject-icon.science {
-
     background: rgba(34, 197, 94, 0.1);
 
     color: #86efac;
 }
 
-
 .subject-icon.math {
-
     background: rgba(139, 92, 246, 0.12);
 
     color: #c084fc;
 }
 
-
 .subject-icon.support {
-
     background: rgba(56, 189, 248, 0.1);
 
     color: #7dd3fc;
 }
 
-
 .subject-icon.english {
-
     background: rgba(236, 72, 153, 0.1);
 
     color: #f9a8d4;
 }
 
-
 .subject-cell strong {
-
     display: block;
 
     color: #e2e8f0;
@@ -701,9 +573,7 @@ body {
     font-size: 13px;
 }
 
-
 .subject-cell span {
-
     display: block;
 
     color: #64748b;
@@ -719,7 +589,6 @@ body {
 ========================================= */
 
 .grade-badge {
-
     background: #1e293b;
 
     color: #cbd5e1;
@@ -731,17 +600,13 @@ body {
     font-size: 11px;
 }
 
-
 .type-normal {
-
     color: #94a3b8;
 
     font-size: 11px;
 }
 
-
 .support-badge {
-
     background: rgba(56, 189, 248, 0.08);
 
     color: #7dd3fc;
@@ -753,11 +618,7 @@ body {
     font-size: 10px;
 }
 
-
-/* STATUS */
-
 .status {
-
     display: inline-flex;
 
     align-items: center;
@@ -767,23 +628,20 @@ body {
     font-size: 11px;
 }
 
-
 .status i {
-
     font-size: 6px;
 }
 
-
 .status.active {
-
     color: #86efac;
 }
 
 
-/* VIEW BUTTON */
+/* =========================================
+   BUTTON
+========================================= */
 
 .view-button {
-
     display: inline-block;
 
     padding: 7px 11px;
@@ -798,12 +656,12 @@ body {
 
     font-size: 10px;
 
+    white-space: nowrap;
+
     transition: 0.2s;
 }
 
-
 .view-button:hover {
-
     background: #8b5cf6;
 
     color: white;
@@ -811,11 +669,10 @@ body {
 
 
 /* =========================================
-   BOTTOM GRID
+   BOTTOM CARDS
 ========================================= */
 
 .bottom-grid {
-
     display: grid;
 
     grid-template-columns: 1.3fr 1fr;
@@ -825,9 +682,7 @@ body {
     margin-bottom: 40px;
 }
 
-
 .dashboard-card {
-
     background: #111827;
 
     border: 1px solid #1e293b;
@@ -837,9 +692,7 @@ body {
     overflow: hidden;
 }
 
-
 .card-heading {
-
     display: flex;
 
     justify-content: space-between;
@@ -851,9 +704,7 @@ body {
     border-bottom: 1px solid #1e293b;
 }
 
-
 .card-heading h2 {
-
     font-size: 16px;
 
     color: #f8fafc;
@@ -861,29 +712,22 @@ body {
     margin-bottom: 3px;
 }
 
-
 .card-heading p {
-
     color: #64748b;
 
     font-size: 11px;
 }
 
-
 .card-heading > i {
-
     color: #8b5cf6;
-
-    font-size: 17px;
 }
 
 
 /* =========================================
-   LESSON ITEMS
+   LESSON
 ========================================= */
 
 .lesson-item {
-
     display: flex;
 
     align-items: center;
@@ -895,15 +739,7 @@ body {
     border-bottom: 1px solid #1e293b;
 }
 
-
-.lesson-item:last-child {
-
-    border-bottom: none;
-}
-
-
 .lesson-icon {
-
     width: 35px;
     height: 35px;
 
@@ -915,31 +751,17 @@ body {
     justify-content: center;
 }
 
-
 .lesson-icon.math {
-
     background: rgba(139, 92, 246, 0.1);
 
     color: #c084fc;
 }
 
-
-.lesson-icon.science {
-
-    background: rgba(34, 197, 94, 0.1);
-
-    color: #86efac;
-}
-
-
 .lesson-info {
-
     flex: 1;
 }
 
-
 .lesson-info strong {
-
     display: block;
 
     color: #cbd5e1;
@@ -947,9 +769,7 @@ body {
     font-size: 12px;
 }
 
-
 .lesson-info span {
-
     display: block;
 
     color: #64748b;
@@ -959,17 +779,11 @@ body {
     margin-top: 3px;
 }
 
-
-.lesson-item > a {
-
+.lesson-item a {
     color: #64748b;
-
-    transition: 0.2s;
 }
 
-
-.lesson-item > a:hover {
-
+.lesson-item a:hover {
     color: #c084fc;
 }
 
@@ -979,7 +793,6 @@ body {
 ========================================= */
 
 .quick-actions {
-
     padding: 18px;
 
     display: grid;
@@ -989,9 +802,7 @@ body {
     gap: 10px;
 }
 
-
 .quick-actions a {
-
     display: flex;
 
     align-items: center;
@@ -1015,22 +826,14 @@ body {
     transition: 0.2s;
 }
 
-
 .quick-actions a i {
-
     color: #a78bfa;
-
-    font-size: 14px;
 }
 
-
 .quick-actions a:hover {
-
     border-color: #8b5cf6;
 
-    color: #f8fafc;
-
-    transform: translateY(-2px);
+    color: white;
 }
 
 
@@ -1039,7 +842,6 @@ body {
 ========================================= */
 
 .footer {
-
     display: flex;
 
     justify-content: space-between;
@@ -1055,106 +857,223 @@ body {
 
 
 /* =========================================
-   RESPONSIVE
+   TABLET
 ========================================= */
 
 @media (max-width: 1100px) {
 
     .sidebar {
-
         width: 220px;
     }
 
     .main-content {
-
         margin-left: 220px;
 
         padding: 0 25px;
     }
 
     .stats-grid {
-
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 
+/* =========================================
+   MOBILE
+========================================= */
+
 @media (max-width: 800px) {
 
-    .sidebar {
+    /* Remove desktop sidebar */
 
+    .sidebar {
         display: none;
     }
 
-    .main-content {
+    /* Full width */
 
+    .main-content {
         margin-left: 0;
 
-        padding: 0 18px;
+        padding: 0 16px;
     }
 
+    /* Mobile header */
+
     .topbar {
+        min-height: 65px;
 
         justify-content: space-between;
     }
 
     .mobile-brand {
-
         display: flex;
 
         align-items: center;
 
         gap: 8px;
 
-        color: #f8fafc;
+        color: white;
+
+        font-size: 16px;
     }
 
-    .mobile-brand i {
+    .mobile-logo {
+        width: 32px;
+        height: 32px;
 
-        color: #8b5cf6;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        background: #8b5cf6;
+
+        border-radius: 9px;
+
+        font-size: 13px;
+    }
+
+    .date-display > i {
+        display: none;
+    }
+
+    /* Welcome */
+
+    .welcome {
+        padding: 28px 0 25px;
     }
 
     .welcome h1 {
+        font-size: 27px;
 
-        font-size: 28px;
+        line-height: 1.25;
     }
 
-    .bottom-grid {
-
-        grid-template-columns: 1fr;
+    .welcome > p:last-child {
+        font-size: 13px;
     }
 
-}
-
-
-@media (max-width: 550px) {
+    /* Stats */
 
     .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
 
-        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .stat-card {
+        padding: 14px;
 
-        padding: 16px;
+        gap: 10px;
     }
 
-    .welcome {
+    .stat-icon {
+        width: 38px;
+        height: 38px;
 
-        padding-top: 28px;
+        min-width: 38px;
+    }
+
+    .stat-card span {
+        font-size: 10px;
+    }
+
+    .stat-card strong {
+        font-size: 17px;
+    }
+
+    /* Bottom cards */
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .main-content {
+        padding: 0 12px;
+    }
+
+    .date-display span {
+        display: none;
+    }
+
+    .date-display strong {
+        font-size: 10px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-card {
+        padding: 12px;
+
+        gap: 8px;
+    }
+
+    .stat-icon {
+        width: 34px;
+        height: 34px;
+
+        min-width: 34px;
+
+        font-size: 13px;
+    }
+
+    .stat-card strong {
+        font-size: 16px;
     }
 
     .section-heading {
-
         align-items: center;
     }
 
-    .footer {
-
-        flex-direction: column;
-
-        gap: 5px;
+    .section-heading h2 {
+        font-size: 18px;
     }
 
+    .view-all {
+        font-size: 10px;
+    }
+
+    /*
+       The table intentionally remains wide.
+       Users can swipe horizontally on phones.
+    */
+
+    .classes-table-wrapper {
+        border-radius: 10px;
+    }
+
+    .classes-table {
+        min-width: 700px;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-label {
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 9px;
+    }
 }
