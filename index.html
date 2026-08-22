@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sundus | Teacher Portal</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+                <h2>Sundus</h2>
+                <span>Teacher Portal</span>
+            </div>
+        </div>
+
+
+        <!-- MAIN MENU -->
+
+        <div class="menu-section">
+
+            <p class="menu-title">MAIN MENU</p>
+
+            <a href="index.html" class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="classes.html" class="menu-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>My Classes</span>
+            </a>
+
+            <a href="assignments.html" class="menu-item">
+                <i class="fa-solid fa-file-pen"></i>
+                <span>Assignments</span>
+            </a>
+
+            <a href="lesson-plans.html" class="menu-item">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <span>Lesson Plans</span>
+            </a>
+
+            <a href="assessments.html" class="menu-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Assessments</span>
+            </a>
+
+            <a href="resources.html" class="menu-item">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Resources</span>
+            </a>
+
+        </div>
+
+
+        <!-- PLANNING -->
+
+        <div class="menu-section">
+
+            <p class="menu-title">PLANNING</p>
+
+            <a href="schedule.html" class="menu-item">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Weekly Schedule</span>
+            </a>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="sidebar-bottom">
+
+            <a href="about.html" class="profile-link">
+
+                <div class="profile-avatar">
+                    S
+                </div>
+
+                <div class="profile-info">
+                    <strong>Sundus Hussain</strong>
+                    <span>Teacher</span>
+                </div>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <strong>Sundus</strong>
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="date-display">
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <div>
+                        <span id="currentDay">Saturday</span>
+                        <strong id="currentDate">August 22, 2026</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="welcome">
+
+            <div>
+
+                <p class="welcome-label">
+                    TEACHER DASHBOARD
+                </p>
+
+                <h1>
+                    Assalamu Alaikum, Sundus
+                </h1>
+
+                <p>
+                    Welcome to your teaching portal. Manage your classes,
+                    lesson plans, assignments, and instructional resources.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                    <span>Total Classes</span>
+                    <strong>7</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div>
+                    <span>Active Classes</span>
+                    <strong>7</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+
+                <div>
+                    <span>Lesson Plans</span>
+                    <strong>1+</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div>
+                    <span>Resources</span>
+                    <strong>View</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CLASSES ================= -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>My Classes</h2>
+
+                    <p>
+                        View and manage your assigned classes.
+                    </p>
+                </div>
+
+                <a href="classes.html" class="view-all">
+                    View All
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="classes-table-wrapper">
+
+                <table class="classes-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- 1ST SCIENCE -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon science">
+                                        <i class="fa-solid fa-flask"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Science</strong>
+                                        <span>Elementary Science</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 1
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="type-normal">
+                                    Teaching
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/science-1st.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- 3RD SCIENCE -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon science">
+                                        <i class="fa-solid fa-seedling"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Science</strong>
+                                        <span>Elementary Science</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 3
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="type-normal">
+                                    Teaching
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/science-3rd.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- 6TH MATH -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon math">
+                                        <i class="fa-solid fa-calculator"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Mathematics</strong>
+                                        <span>Middle School Math</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 6
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="type-normal">
+                                    Teaching
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/math-6th.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- 7TH MATH -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon math">
+                                        <i class="fa-solid fa-square-root-variable"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Mathematics</strong>
+                                        <span>Middle School Math</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 7
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="type-normal">
+                                    Teaching
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/math-7th.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- 5TH SCIENCE SUPPORT -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon support">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Science</strong>
+                                        <span>Classroom Support</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 5
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="support-badge">
+                                    Support · Shadow
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/science-support-5th.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- 4TH ENGLISH SUPPORT -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon english">
+                                        <i class="fa-solid fa-book-open"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>English</strong>
+                                        <span>Language Arts Support</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 4
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="support-badge">
+                                    Support · Shadow
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/english-support-4th.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- 5TH MATH SUPPORT -->
+
+                        <tr>
+
+                            <td>
+                                <div class="subject-cell">
+
+                                    <div class="subject-icon support">
+                                        <i class="fa-solid fa-chart-column"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Mathematics</strong>
+                                        <span>Classroom Support</span>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="grade-badge">
+                                    Grade 5
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="support-badge">
+                                    Support · Shadow
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status active">
+                                    <i class="fa-solid fa-circle"></i>
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+                                <a href="subjects/math-support-5th.html"
+                                    class="view-button">
+                                    View Class
+                                </a>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOTTOM SECTION ================= -->
+
+        <section class="bottom-grid">
+
+
+            <!-- RECENT LESSON PLANS -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Recent Lesson Plans</h2>
+                        <p>Your latest instructional planning</p>
+                    </div>
+
+                    <i class="fa-solid fa-clipboard-list"></i>
+
+                </div>
+
+
+                <div class="lesson-item">
+
+                    <div class="lesson-icon math">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+
+                    <div class="lesson-info">
+
+                        <strong>
+                            Divide Multi-Digit Numbers
+                        </strong>
+
+                        <span>
+                            Grade 6 Mathematics · Lesson 1.1
+                        </span>
+
+                    </div>
+
+                    <a href="subjects/math-6th.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="lesson-item">
+
+                    <div class="lesson-icon science">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <div class="lesson-info">
+
+                        <strong>
+                            Science Lesson
+                        </strong>
+
+                        <span>
+                            Grade 1 Science
+                        </span>
+
+                    </div>
+
+                    <a href="subjects/science-1st.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Quick Actions</h2>
+                        <p>Access your teaching resources</p>
+                    </div>
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <a href="lesson-plans.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>Lesson Plans</span>
+                    </a>
+
+                    <a href="assignments.html">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span>Assignments</span>
+                    </a>
+
+                    <a href="assessments.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Assessments</span>
+                    </a>
+
+                    <a href="resources.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Resources</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <span>
+                Teaching Portfolio · Sundus Hussain
+            </span>
+
+            <span>
+                © 2026
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+    <script>
+
+        const today = new Date();
+
+        const optionsDay = {
+            weekday: 'long'
+        };
+
+        const optionsDate = {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        };
+
+        document.getElementById("currentDay").textContent =
+            today.toLocaleDateString("en-US", optionsDay);
+
+        document.getElementById("currentDate").textContent =
+            today.toLocaleDateString("en-US", optionsDate);
+
+    </script>
+
+</body>
+
+</html>
