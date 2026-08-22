@@ -1,6 +1,6 @@
-/* ================================
+/* ==========================================
    GRADE 6 MATH LESSON PLAN
-   ================================ */
+   ========================================== */
 
 * {
     margin: 0;
@@ -15,7 +15,9 @@ body {
     line-height: 1.6;
 }
 
-/* MAIN PAGE */
+/* ==========================================
+   PAGE
+   ========================================== */
 
 .lesson-page {
     max-width: 1100px;
@@ -23,7 +25,9 @@ body {
     padding: 30px 25px 60px;
 }
 
-/* BACK LINK */
+/* ==========================================
+   BACK LINK
+   ========================================== */
 
 .back-link {
     display: inline-block;
@@ -38,15 +42,17 @@ body {
     text-decoration: underline;
 }
 
-/* HEADER */
+/* ==========================================
+   HEADER
+   ========================================== */
 
 .lesson-header {
     background: white;
-    border-radius: 18px;
-    padding: 30px;
-    margin-bottom: 25px;
+    border-radius: 20px;
+    padding: 32px;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 28px;
 }
 
 .subject-icon {
@@ -56,70 +62,75 @@ body {
 
 .lesson-label {
     color: #2563eb;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     margin-bottom: 5px;
 }
 
 .lesson-header h1 {
-    font-size: 34px;
+    font-size: 35px;
     color: #111827;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .module-name {
-    font-size: 17px;
     color: #6b7280;
+    font-size: 17px;
 }
 
-/* SUMMARY CARDS */
+/* ==========================================
+   SUMMARY CARDS
+   ========================================== */
 
 .lesson-summary {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 14px;
-    margin-top: 25px;
+    gap: 13px;
+    margin-top: 27px;
 }
 
 .summary-card {
     background: #f8fafc;
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 16px;
+    border-radius: 13px;
+    padding: 16px 10px;
     text-align: center;
 }
 
 .summary-icon {
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-size: 21px;
+    margin-bottom: 3px;
 }
 
 .summary-number {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: #111827;
 }
 
 .summary-label {
-    font-size: 12px;
     color: #6b7280;
+    font-size: 11px;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: .4px;
 }
 
-/* WEEK TITLE */
+/* ==========================================
+   WEEK
+   ========================================== */
 
 .week-section {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .week-title {
     background: #1f2937;
     color: white;
-    padding: 20px 25px;
-    border-radius: 16px;
-    margin-bottom: 20px;
+    padding: 22px 26px;
+    border-radius: 17px;
+    margin-bottom: 22px;
 }
 
 .week-title h2 {
@@ -132,90 +143,121 @@ body {
     font-size: 14px;
 }
 
-/* DAY CARD */
+/* ==========================================
+   DAY CARD
+   ========================================== */
 
 .day-card {
     background: white;
     border: 1px solid #e5e7eb;
     border-radius: 18px;
-    margin-bottom: 22px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    margin-bottom: 24px;
+    box-shadow: 0 5px 17px rgba(0, 0, 0, 0.04);
 }
 
-/* DAY HEADER */
+/* ==========================================
+   DAY HEADER
+   ========================================== */
 
 .day-header {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 17px;
     padding: 20px 25px;
     background: #f8fafc;
     border-bottom: 1px solid #e5e7eb;
 }
 
 .day-number {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
     background: #2563eb;
     color: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+
+    font-size: 17px;
     font-weight: 700;
 }
 
 .day-info h3 {
-    font-size: 14px;
     color: #2563eb;
-    text-transform: uppercase;
-    letter-spacing: .5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
 }
 
 .day-info h2 {
-    font-size: 22px;
     color: #111827;
+    font-size: 22px;
 }
 
-/* DAY CONTENT */
+/* ==========================================
+   DAY CONTENT
+   ========================================== */
 
 .day-content {
-    padding: 25px;
-}
-
-.lesson-title {
-    font-size: 25px;
-    color: #111827;
-    margin-bottom: 20px;
+    padding: 27px;
 }
 
 .lesson-tag {
     display: inline-block;
-    background: #eff6ff;
-    color: #2563eb;
     padding: 5px 11px;
     border-radius: 20px;
-    font-size: 12px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 11px;
     font-weight: 700;
-    margin-bottom: 15px;
+    letter-spacing: .5px;
+    margin-bottom: 12px;
 }
 
-/* CONTENT SECTIONS */
+.lesson-title {
+    color: #111827;
+    font-size: 27px;
+    margin-bottom: 21px;
+}
+
+/* ==========================================
+   OBJECTIVE
+   ========================================== */
+
+.objective-box {
+    background: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 23px;
+}
+
+.objective-box h4 {
+    color: #166534;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.objective-box p {
+    color: #365314;
+    font-size: 14px;
+}
+
+/* ==========================================
+   CONTENT
+   ========================================== */
 
 .content-section {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 }
 
 .content-section h4 {
-    font-size: 16px;
     color: #111827;
+    font-size: 16px;
     margin-bottom: 8px;
-}
-
-.content-section p {
-    color: #4b5563;
 }
 
 .content-section ul {
@@ -224,29 +266,13 @@ body {
 }
 
 .content-section li {
-    margin-bottom: 6px;
-}
-
-/* OBJECTIVE */
-
-.objective-box {
-    background: #f0fdf4;
-    border-left: 4px solid #22c55e;
-    padding: 15px 18px;
-    border-radius: 8px;
-    margin-bottom: 22px;
-}
-
-.objective-box h4 {
-    color: #166534;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
-.objective-box p {
-    color: #365314;
-}
-
-/* VOCABULARY */
+/* ==========================================
+   VOCABULARY
+   ========================================== */
 
 .vocabulary {
     display: flex;
@@ -256,33 +282,140 @@ body {
 
 .vocabulary span {
     background: #f3f4f6;
+    color: #374151;
     padding: 6px 11px;
     border-radius: 20px;
-    font-size: 13px;
-    color: #374151;
+    font-size: 12px;
 }
 
-/* ACTION LINKS */
+/* ==========================================
+   PRACTICE QUESTIONS
+   ========================================== */
+
+.practice-section {
+    margin-top: 25px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.practice-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 17px;
+}
+
+.practice-header > span {
+    font-size: 25px;
+}
+
+.practice-header h3 {
+    color: #111827;
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+.practice-header p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.question {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    padding: 13px 14px;
+}
+
+.question-number {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.question p {
+    margin-top: 3px;
+    color: #374151;
+    font-size: 14px;
+}
+
+/* ==========================================
+   ASSESSMENT
+   ========================================== */
+
+.assessment-box {
+    background: #fff7ed;
+    border-left: 4px solid #f97316;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-top: 22px;
+}
+
+.assessment-box h4 {
+    color: #c2410c;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.assessment-box p {
+    color: #7c2d12;
+    font-size: 14px;
+}
+
+/* ==========================================
+   ACTION BUTTONS
+   ========================================== */
 
 .lesson-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
     margin-top: 25px;
     padding-top: 20px;
+
     border-top: 1px solid #e5e7eb;
 }
 
 .lesson-actions a {
     display: inline-block;
+
     padding: 10px 15px;
-    border-radius: 9px;
+
     background: #f3f4f6;
     color: #374151;
+
+    border-radius: 9px;
+
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    transition: 0.2s ease;
+
+    transition: all .2s ease;
 }
 
 .lesson-actions a:hover {
@@ -290,58 +423,41 @@ body {
     transform: translateY(-1px);
 }
 
-.lesson-actions .primary {
+.lesson-actions a.primary {
     background: #2563eb;
     color: white;
 }
 
-.lesson-actions .primary:hover {
+.lesson-actions a.primary:hover {
     background: #1d4ed8;
 }
 
-/* ASSESSMENT */
-
-.assessment-box {
-    background: #fff7ed;
-    border-left: 4px solid #f97316;
-    padding: 15px 18px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.assessment-box h4 {
-    color: #c2410c;
-    margin-bottom: 5px;
-}
-
-/* FOOTER */
+/* ==========================================
+   FOOTER
+   ========================================== */
 
 .lesson-footer {
     text-align: center;
     color: #6b7280;
-    font-size: 14px;
+    font-size: 13px;
     padding: 25px 0;
 }
 
-/* ================================
+/* ==========================================
    TABLET
-   ================================ */
+   ========================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     .lesson-summary {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .lesson-header h1 {
-        font-size: 29px;
-    }
-
 }
 
-/* ================================
-   PHONE
-   ================================ */
+/* ==========================================
+   MOBILE
+   ========================================== */
 
 @media (max-width: 600px) {
 
@@ -350,12 +466,12 @@ body {
     }
 
     .lesson-header {
-        padding: 22px;
-        border-radius: 14px;
+        padding: 23px 19px;
+        border-radius: 15px;
     }
 
     .lesson-header h1 {
-        font-size: 26px;
+        font-size: 27px;
     }
 
     .module-name {
@@ -364,18 +480,15 @@ body {
 
     .lesson-summary {
         grid-template-columns: repeat(2, 1fr);
+        gap: 9px;
     }
 
     .summary-card {
-        padding: 13px 8px;
-    }
-
-    .summary-number {
-        font-size: 20px;
+        padding: 13px 7px;
     }
 
     .week-title {
-        padding: 17px 20px;
+        padding: 18px 19px;
     }
 
     .week-title h2 {
@@ -388,9 +501,9 @@ body {
     }
 
     .day-number {
-        width: 42px;
-        height: 42px;
-        flex-shrink: 0;
+        width: 43px;
+        height: 43px;
+        font-size: 14px;
     }
 
     .day-info h2 {
@@ -405,12 +518,21 @@ body {
         font-size: 22px;
     }
 
+    .practice-section {
+        padding: 15px;
+    }
+
+    .question {
+        padding: 12px;
+    }
+
     .lesson-actions {
         flex-direction: column;
     }
 
     .lesson-actions a {
-        text-align: center;
         width: 100%;
+        text-align: center;
     }
+
 }
