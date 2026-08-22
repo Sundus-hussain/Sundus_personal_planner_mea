@@ -4,10 +4,15 @@
 
 @media (max-width: 768px) {
 
-    /* SIDEBAR */
+    /* =====================================================
+       SIDEBAR
+    ===================================================== */
+
     .sidebar {
         display: flex;
+
         position: fixed;
+
         left: 0;
         top: 0;
 
@@ -17,34 +22,61 @@
         padding: 22px 12px;
 
         overflow-y: auto;
+        overflow-x: hidden;
 
         z-index: 1000;
+
+        background: #ffffff;
+
+        border-right: 1px solid #e7eaed;
     }
 
-    /* MAIN CONTENT */
+
+    /* =====================================================
+       MAIN CONTENT
+    ===================================================== */
+
     .main-content {
         margin-left: 220px;
 
-        padding: 0 16px 25px;
-
         width: calc(100% - 220px);
+
+        min-height: 100vh;
+
+        padding: 0 16px 25px;
     }
 
-    /* TOP BAR */
+
+    /* =====================================================
+       TOP BAR
+    ===================================================== */
+
     .topbar {
         height: 70px;
+
+        display: flex;
+
+        align-items: center;
 
         justify-content: flex-end;
     }
 
-    /* Hide mobile brand because sidebar is visible */
+
+    /* Hide mobile logo because sidebar is visible */
+
     .mobile-brand {
         display: none;
     }
 
+
+    /* Date */
+
     .date-display {
         min-width: auto;
+
         padding: 8px 10px;
+
+        border-radius: 10px;
     }
 
     .date-display > i {
@@ -59,48 +91,191 @@
         font-size: 10px;
     }
 
-    /* WELCOME */
+
+    /* =====================================================
+       SIDEBAR BRAND
+    ===================================================== */
+
+    .brand {
+        gap: 9px;
+
+        padding: 0 8px 25px;
+    }
+
+    .brand-icon {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 9px;
+
+        font-size: 16px;
+    }
+
+    .brand h2 {
+        font-size: 18px;
+    }
+
+    .brand span {
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       SIDEBAR MENU
+    ===================================================== */
+
+    .menu-section {
+        margin-bottom: 20px;
+    }
+
+    .menu-title {
+        padding: 0 10px;
+
+        margin-bottom: 7px;
+
+        font-size: 9px;
+
+        letter-spacing: 0.8px;
+    }
+
+    .menu-item {
+        height: 40px;
+
+        gap: 9px;
+
+        padding: 0 10px;
+
+        margin: 2px 0;
+
+        border-radius: 8px;
+
+        font-size: 12px;
+    }
+
+    .menu-item i {
+        width: 16px;
+
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       SIDEBAR PROFILE
+    ===================================================== */
+
+    .sidebar-bottom {
+        padding-top: 14px;
+    }
+
+    .profile-link {
+        gap: 8px;
+
+        padding: 8px;
+    }
+
+    .profile-avatar {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+    .profile-info strong {
+        font-size: 10px;
+    }
+
+    .profile-info span {
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       WELCOME
+    ===================================================== */
+
     .welcome {
         padding: 25px 0 20px;
     }
 
+    .welcome-label {
+        font-size: 9px;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 7px;
+    }
+
     .welcome h1 {
         font-size: 24px;
+
         line-height: 1.3;
+
+        margin-bottom: 7px;
     }
 
     .welcome > p:last-child {
         font-size: 12px;
+
+        line-height: 1.5;
     }
 
-    /* STATS */
+
+    /* =====================================================
+       STAT CARDS
+    ===================================================== */
+
     .stats-grid {
+        display: grid;
+
         grid-template-columns: repeat(2, 1fr);
+
         gap: 10px;
+
         margin-bottom: 25px;
     }
 
     .stat-card {
         min-height: 88px;
+
         padding: 13px;
+
         gap: 10px;
+
+        border-radius: 10px;
     }
 
     .stat-icon {
         width: 35px;
         height: 35px;
+
+        border-radius: 8px;
+
         font-size: 13px;
     }
 
     .stat-card span {
         font-size: 10px;
+
+        margin-bottom: 4px;
     }
 
     .stat-card strong {
         font-size: 18px;
     }
 
-    /* SECTION */
+
+    /* =====================================================
+       MY CLASSES SECTION
+    ===================================================== */
+
+    .dashboard-section {
+        margin-bottom: 25px;
+    }
+
+    .section-heading {
+        margin-bottom: 13px;
+    }
+
     .section-heading h2 {
         font-size: 18px;
     }
@@ -109,50 +284,125 @@
         font-size: 10px;
     }
 
-    /* TABLE */
+
+    /* =====================================================
+       CLASSES TABLE
+    ===================================================== */
+
     .classes-table-wrapper {
+        width: 100%;
+
         overflow-x: auto;
+
         -webkit-overflow-scrolling: touch;
+
+        border-radius: 10px;
     }
 
     .classes-table {
         min-width: 850px;
     }
 
-    /* BOTTOM */
+
+    /* =====================================================
+       BOTTOM CARDS
+    ===================================================== */
+
     .bottom-grid {
+        display: grid;
+
         grid-template-columns: 1fr;
+
         gap: 15px;
+
+        margin-top: 20px;
     }
 
-    /* FOOTER */
+    .dashboard-card {
+        padding: 16px;
+
+        border-radius: 10px;
+    }
+
+    .card-heading h2 {
+        font-size: 16px;
+    }
+
+    .card-heading p {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       QUICK ACTIONS
+    ===================================================== */
+
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+    .quick-actions a {
+        min-height: 52px;
+
+        padding: 10px;
+
+        font-size: 10px;
+    }
+
+    .quick-actions a i {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
     .footer {
         flex-direction: column;
+
         gap: 6px;
+
         text-align: center;
+
+        margin-top: 25px;
     }
 }
 
 
 /* =========================================================
-   SMALL PHONES
+   SMALL PHONES — 480px AND BELOW
 ========================================================= */
 
 @media (max-width: 480px) {
 
+    /* =====================================================
+       SIDEBAR
+    ===================================================== */
+
     .sidebar {
         width: 190px;
+
         padding: 18px 9px;
     }
 
+
+    /* =====================================================
+       BRAND
+    ===================================================== */
+
     .brand {
         gap: 8px;
+
         padding: 0 8px 22px;
     }
 
     .brand-icon {
         width: 34px;
         height: 34px;
+
         font-size: 15px;
     }
 
@@ -164,57 +414,198 @@
         font-size: 9px;
     }
 
-    .menu-item {
-        height: 40px;
-        gap: 9px;
-        padding: 0 10px;
-        font-size: 12px;
-    }
 
-    .menu-item i {
-        width: 16px;
-        font-size: 13px;
+    /* =====================================================
+       MENU
+    ===================================================== */
+
+    .menu-section {
+        margin-bottom: 18px;
     }
 
     .menu-title {
         padding: 0 10px;
+
+        font-size: 8px;
+    }
+
+    .menu-item {
+        height: 39px;
+
+        gap: 8px;
+
+        padding: 0 9px;
+
+        font-size: 11px;
+    }
+
+    .menu-item i {
+        width: 15px;
+
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       PROFILE
+    ===================================================== */
+
+    .profile-link {
+        padding: 7px;
+    }
+
+    .profile-avatar {
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+    .profile-info strong {
         font-size: 9px;
     }
 
+    .profile-info span {
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       MAIN CONTENT
+    ===================================================== */
+
     .main-content {
         margin-left: 190px;
+
         width: calc(100% - 190px);
 
         padding-left: 10px;
         padding-right: 10px;
     }
 
+
+    /* =====================================================
+       TOP BAR
+    ===================================================== */
+
     .topbar {
         height: 60px;
+    }
+
+    .date-display {
+        padding: 7px 8px;
+    }
+
+    .date-display span {
+        font-size: 8px;
+    }
+
+    .date-display strong {
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       WELCOME
+    ===================================================== */
+
+    .welcome {
+        padding: 20px 0 17px;
     }
 
     .welcome h1 {
         font-size: 20px;
     }
 
+    .welcome > p:last-child {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
     .stats-grid {
         gap: 8px;
     }
 
     .stat-card {
+        min-height: 78px;
+
         padding: 10px;
+
+        gap: 7px;
+    }
+
+    .stat-icon {
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+    .stat-card span {
+        font-size: 8px;
     }
 
     .stat-card strong {
         font-size: 16px;
     }
 
-    .stat-icon {
-        width: 30px;
-        height: 30px;
+
+    /* =====================================================
+       SECTION
+    ===================================================== */
+
+    .section-heading h2 {
+        font-size: 16px;
     }
 
+    .section-heading p {
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       TABLE
+    ===================================================== */
+
+    .classes-table {
+        min-width: 850px;
+    }
+
+
+    /* =====================================================
+       BOTTOM CARDS
+    ===================================================== */
+
     .dashboard-card {
-        padding: 15px;
+        padding: 14px;
+    }
+
+    .card-heading h2 {
+        font-size: 15px;
+    }
+
+    .card-heading p {
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       QUICK ACTIONS
+    ===================================================== */
+
+    .quick-actions {
+        gap: 7px;
+    }
+
+    .quick-actions a {
+        min-height: 48px;
+
+        padding: 9px;
+
+        font-size: 9px;
     }
 }
