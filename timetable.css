@@ -1,0 +1,237 @@
+/* ================= TIMETABLE ================= */
+
+.timetable-section {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.timetable-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.timetable-section .section-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.timetable-section .section-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* TABLE CONTAINER */
+
+.timetable-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+
+/* TABLE */
+
+.timetable {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+/* HEADER */
+
+.timetable thead th {
+    background: #f7f8fa;
+    padding: 16px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.timetable thead th:first-child {
+    width: 115px;
+    text-align: left;
+}
+
+
+/* CELLS */
+
+.timetable tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.timetable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* TIME */
+
+.time-cell {
+    text-align: left !important;
+    white-space: nowrap;
+    padding-left: 16px !important;
+}
+
+.time-cell span {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+}
+
+.time-cell small {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    color: #999;
+}
+
+
+/* CLASS CARDS */
+
+.class-card {
+    min-height: 62px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    transition: transform 0.2s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-2px);
+}
+
+.class-card .subject {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.class-card strong {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.class-card small {
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* SCIENCE */
+
+.class-card.science {
+    background: #eef7f1;
+    color: #247044;
+}
+
+
+/* MATH */
+
+.class-card.math {
+    background: #eef3fb;
+    color: #315b91;
+}
+
+
+/* ENGLISH */
+
+.class-card.english {
+    background: #f6f0fb;
+    color: #704a91;
+}
+
+
+/* SHADOW */
+
+.class-card.shadow {
+    border: 1px dashed #c7c7c7;
+}
+
+
+/* PREP + LUNCH */
+
+.break-card {
+    min-height: 54px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.break-card strong {
+    font-size: 13px;
+}
+
+.break-card small {
+    font-size: 11px;
+    color: #777;
+}
+
+.break-card.prep {
+    background: #fff7e8;
+    color: #85611a;
+}
+
+.break-card.lunch {
+    background: #f3f4f6;
+    color: #555;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .timetable-section {
+        margin-top: 24px;
+    }
+
+    .timetable-section .section-header h2 {
+        font-size: 19px;
+    }
+
+    .timetable-wrapper {
+        border-radius: 12px;
+    }
+
+    .timetable {
+        min-width: 850px;
+    }
+
+    .timetable thead th {
+        padding: 13px 8px;
+    }
+
+    .timetable tbody td {
+        padding: 8px;
+    }
+
+    .class-card {
+        min-height: 58px;
+        padding: 8px;
+    }
+
+}
