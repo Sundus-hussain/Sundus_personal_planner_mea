@@ -1,0 +1,513 @@
+/* =========================================
+   GRADE 3 SCIENCE LESSON PLANNER
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+.lesson-page {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #315f8a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.lesson-header {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(35, 55, 75, 0.08);
+    border: 1px solid #e4eaf0;
+    text-align: center;
+}
+
+.subject-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f3f0;
+    border-radius: 20px;
+    font-size: 38px;
+}
+
+.lesson-label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #6d7b86;
+    margin-bottom: 5px;
+}
+
+.lesson-header h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+    color: #20313d;
+}
+
+.module-name {
+    font-size: 18px;
+    color: #60717d;
+}
+
+
+/* =========================================
+   SUMMARY
+   ========================================= */
+
+.lesson-summary {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.summary-card {
+    padding: 18px 10px;
+    border-radius: 16px;
+    background: #f7fafc;
+    border: 1px solid #e5ebef;
+}
+
+.summary-icon {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.summary-number {
+    font-size: 22px;
+    font-weight: 800;
+    color: #315f8a;
+}
+
+.summary-label {
+    font-size: 12px;
+    color: #73808a;
+    margin-top: 2px;
+}
+
+
+/* =========================================
+   WEEK SECTION
+   ========================================= */
+
+.week-section {
+    margin-top: 35px;
+}
+
+.week-title {
+    margin-bottom: 22px;
+}
+
+.week-title h2 {
+    font-size: 27px;
+    color: #263944;
+}
+
+.week-title p {
+    color: #71808a;
+}
+
+
+/* =========================================
+   DAY CARD
+   ========================================= */
+
+.day-card {
+    background: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 22px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 7px 25px rgba(35, 55, 75, 0.06);
+}
+
+.day-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 23px 28px;
+    background: #edf5f3;
+    border-bottom: 1px solid #dce8e5;
+}
+
+.day-number {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #315f8a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.day-info h3 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #65747d;
+    margin-bottom: 2px;
+}
+
+.day-info h2 {
+    font-size: 22px;
+    color: #243641;
+}
+
+
+/* =========================================
+   DAY CONTENT
+   ========================================= */
+
+.day-content {
+    padding: 30px;
+}
+
+.lesson-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e8f3f0;
+    color: #31695e;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.lesson-title {
+    margin: 12px 0 24px;
+    font-size: 27px;
+    color: #263944;
+}
+
+
+/* =========================================
+   OBJECTIVE
+   ========================================= */
+
+.objective-box {
+    background: #f5f9fc;
+    border-left: 4px solid #315f8a;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.objective-box h4 {
+    color: #315f8a;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.objective-box p {
+    color: #52636e;
+}
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.content-section {
+    margin-bottom: 24px;
+}
+
+.content-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #354953;
+}
+
+.content-section ul {
+    padding-left: 22px;
+}
+
+.content-section li {
+    margin-bottom: 7px;
+    color: #53636c;
+}
+
+
+/* =========================================
+   VOCABULARY
+   ========================================= */
+
+.vocabulary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vocabulary span {
+    background: #f1f5f7;
+    border: 1px solid #dce5ea;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #52646f;
+}
+
+
+/* =========================================
+   PRACTICE QUESTIONS
+   ========================================= */
+
+.practice-section {
+    margin-top: 30px;
+    padding: 24px;
+    background: #fafcfd;
+    border: 1px solid #e1e9ee;
+    border-radius: 17px;
+}
+
+.practice-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.practice-header > span {
+    width: 42px;
+    height: 42px;
+    background: #e8f3f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.practice-header h3 {
+    color: #30444f;
+    font-size: 18px;
+}
+
+.practice-header p {
+    color: #78868e;
+    font-size: 13px;
+}
+
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 13px 15px;
+    background: white;
+    border: 1px solid #e5ebef;
+    border-radius: 11px;
+}
+
+.question-number {
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #315f8a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.question p {
+    color: #4d5f69;
+    padding-top: 2px;
+}
+
+
+/* =========================================
+   ASSESSMENT
+   ========================================= */
+
+.assessment-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff9ed;
+    border: 1px solid #f0dfb7;
+    border-radius: 14px;
+}
+
+.assessment-box h4 {
+    color: #806322;
+    margin-bottom: 5px;
+}
+
+.assessment-box p {
+    color: #6e6145;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+   ========================================= */
+
+.lesson-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.lesson-actions a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #f1f5f7;
+    border: 1px solid #dce5ea;
+    color: #425864;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.lesson-actions a:hover {
+    background: #e6edf1;
+    transform: translateY(-1px);
+}
+
+.lesson-actions a.primary {
+    background: #315f8a;
+    border-color: #315f8a;
+    color: white;
+}
+
+.lesson-actions a.primary:hover {
+    background: #264d70;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.lesson-footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #7b8991;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .lesson-summary {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .lesson-page {
+        width: 94%;
+        padding-top: 20px;
+    }
+
+    .lesson-header {
+        padding: 28px 18px;
+    }
+
+    .lesson-header h1 {
+        font-size: 29px;
+    }
+
+    .lesson-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .day-header {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .day-number {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .day-info h2 {
+        font-size: 18px;
+    }
+
+    .day-content {
+        padding: 20px;
+    }
+
+    .lesson-title {
+        font-size: 23px;
+    }
+
+    .practice-section {
+        padding: 17px;
+    }
+
+    .lesson-actions {
+        flex-direction: column;
+    }
+
+    .lesson-actions a {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .lesson-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .summary-card {
+        padding: 14px 8px;
+    }
+
+}
