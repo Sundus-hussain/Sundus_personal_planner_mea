@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- IMPORTANT FOR PHONE RESPONSIVENESS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sundus | Teacher Portal</title>
 
-    <link rel="stylesheet" href="index.css">
+    <!-- YOUR CSS FILE -->
+    <link rel="stylesheet" href="./index.css">
 
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&display=swap"
         rel="stylesheet">
 </head>
@@ -23,6 +28,7 @@
     <aside class="sidebar">
 
         <div class="brand">
+
             <div class="brand-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
             </div>
@@ -31,67 +37,68 @@
                 <h2>Sundus</h2>
                 <span>Teacher Portal</span>
             </div>
+
         </div>
 
 
         <!-- MAIN MENU -->
 
-        <div class="menu-section">
+        <nav class="menu-section">
 
             <p class="menu-title">MAIN MENU</p>
 
-            <a href="index.html" class="menu-item active">
+            <a href="./index.html" class="menu-item active">
                 <i class="fa-solid fa-house"></i>
                 <span>Dashboard</span>
             </a>
 
-            <a href="classes.html" class="menu-item">
+            <a href="./classes.html" class="menu-item">
                 <i class="fa-solid fa-book-open"></i>
                 <span>My Classes</span>
             </a>
 
-            <a href="assignments.html" class="menu-item">
+            <a href="./assignments.html" class="menu-item">
                 <i class="fa-solid fa-file-pen"></i>
                 <span>Assignments</span>
             </a>
 
-            <a href="lesson-plans.html" class="menu-item">
+            <a href="./lesson-plans.html" class="menu-item">
                 <i class="fa-solid fa-clipboard-list"></i>
                 <span>Lesson Plans</span>
             </a>
 
-            <a href="assessments.html" class="menu-item">
+            <a href="./assessments.html" class="menu-item">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span>Assessments</span>
             </a>
 
-            <a href="resources.html" class="menu-item">
+            <a href="./resources.html" class="menu-item">
                 <i class="fa-solid fa-folder-open"></i>
                 <span>Resources</span>
             </a>
 
-        </div>
+        </nav>
 
 
         <!-- PLANNING -->
 
-        <div class="menu-section">
+        <nav class="menu-section">
 
             <p class="menu-title">PLANNING</p>
 
-            <a href="schedule.html" class="menu-item">
+            <a href="./schedule.html" class="menu-item">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>Weekly Schedule</span>
             </a>
 
-        </div>
+        </nav>
 
 
         <!-- PROFILE -->
 
         <div class="sidebar-bottom">
 
-            <a href="about.html" class="profile-link">
+            <a href="./about.html" class="profile-link">
 
                 <div class="profile-avatar">
                     S
@@ -118,20 +125,26 @@
 
         <header class="topbar">
 
+            <!-- Appears only on phones -->
+
             <div class="mobile-brand">
-                <i class="fa-solid fa-graduation-cap"></i>
+
+                <div class="mobile-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
                 <strong>Sundus</strong>
+
             </div>
 
-            <div class="topbar-right">
 
-                <div class="date-display">
-                    <i class="fa-regular fa-calendar"></i>
+            <div class="date-display">
 
-                    <div>
-                        <span id="currentDay">Saturday</span>
-                        <strong id="currentDate">August 22, 2026</strong>
-                    </div>
+                <i class="fa-regular fa-calendar"></i>
+
+                <div>
+                    <span id="currentDay">Saturday</span>
+                    <strong id="currentDate">August 22, 2026</strong>
                 </div>
 
             </div>
@@ -143,22 +156,18 @@
 
         <section class="welcome">
 
-            <div>
+            <p class="welcome-label">
+                TEACHER DASHBOARD
+            </p>
 
-                <p class="welcome-label">
-                    TEACHER DASHBOARD
-                </p>
+            <h1>
+                Assalamu Alaikum, Sundus
+            </h1>
 
-                <h1>
-                    Assalamu Alaikum, Sundus
-                </h1>
-
-                <p>
-                    Welcome to your teaching portal. Manage your classes,
-                    lesson plans, assignments, and instructional resources.
-                </p>
-
-            </div>
+            <p>
+                Welcome to your teaching portal. Manage your classes,
+                lesson plans, assignments, and instructional resources.
+            </p>
 
         </section>
 
@@ -213,7 +222,7 @@
             <div class="stat-card">
 
                 <div class="stat-icon orange">
-                    <i class="fa-solid fa-file-lines"></i>
+                    <i class="fa-solid fa-folder-open"></i>
                 </div>
 
                 <div>
@@ -226,7 +235,7 @@
         </section>
 
 
-        <!-- ================= CLASSES ================= -->
+        <!-- ================= MY CLASSES ================= -->
 
         <section class="dashboard-section">
 
@@ -240,7 +249,7 @@
                     </p>
                 </div>
 
-                <a href="classes.html" class="view-all">
+                <a href="./classes.html" class="view-all">
                     View All
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -268,11 +277,12 @@
                     <tbody>
 
 
-                        <!-- 1ST SCIENCE -->
+                        <!-- 1ST GRADE SCIENCE -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon science">
@@ -285,6 +295,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -307,7 +318,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/science-1st.html"
+                                <a href="./subjects/science-1st.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -316,11 +327,12 @@
                         </tr>
 
 
-                        <!-- 3RD SCIENCE -->
+                        <!-- 3RD GRADE SCIENCE -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon science">
@@ -333,6 +345,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -355,7 +368,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/science-3rd.html"
+                                <a href="./subjects/science-3rd.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -364,11 +377,12 @@
                         </tr>
 
 
-                        <!-- 6TH MATH -->
+                        <!-- 6TH GRADE MATH -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon math">
@@ -381,6 +395,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -403,7 +418,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/math-6th.html"
+                                <a href="./subjects/math-6th.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -412,11 +427,12 @@
                         </tr>
 
 
-                        <!-- 7TH MATH -->
+                        <!-- 7TH GRADE MATH -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon math">
@@ -429,6 +445,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -451,7 +468,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/math-7th.html"
+                                <a href="./subjects/math-7th.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -460,11 +477,12 @@
                         </tr>
 
 
-                        <!-- 5TH SCIENCE SUPPORT -->
+                        <!-- 5TH GRADE SCIENCE SUPPORT -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon support">
@@ -477,6 +495,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -499,7 +518,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/science-support-5th.html"
+                                <a href="./subjects/science-support-5th.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -508,11 +527,12 @@
                         </tr>
 
 
-                        <!-- 4TH ENGLISH SUPPORT -->
+                        <!-- 4TH GRADE ENGLISH SUPPORT -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon english">
@@ -525,6 +545,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -547,7 +568,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/english-support-4th.html"
+                                <a href="./subjects/english-support-4th.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -556,11 +577,12 @@
                         </tr>
 
 
-                        <!-- 5TH MATH SUPPORT -->
+                        <!-- 5TH GRADE MATH SUPPORT -->
 
                         <tr>
 
                             <td>
+
                                 <div class="subject-cell">
 
                                     <div class="subject-icon support">
@@ -573,6 +595,7 @@
                                     </div>
 
                                 </div>
+
                             </td>
 
                             <td>
@@ -595,7 +618,7 @@
                             </td>
 
                             <td>
-                                <a href="subjects/math-support-5th.html"
+                                <a href="./subjects/math-support-5th.html"
                                     class="view-button">
                                     View Class
                                 </a>
@@ -613,7 +636,7 @@
         </section>
 
 
-        <!-- ================= BOTTOM SECTION ================= -->
+        <!-- ================= BOTTOM ================= -->
 
         <section class="bottom-grid">
 
@@ -652,32 +675,7 @@
 
                     </div>
 
-                    <a href="subjects/math-6th.html">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-
-                <div class="lesson-item">
-
-                    <div class="lesson-icon science">
-                        <i class="fa-solid fa-flask"></i>
-                    </div>
-
-                    <div class="lesson-info">
-
-                        <strong>
-                            Science Lesson
-                        </strong>
-
-                        <span>
-                            Grade 1 Science
-                        </span>
-
-                    </div>
-
-                    <a href="subjects/science-1st.html">
+                    <a href="./subjects/math-6th.html">
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
@@ -695,7 +693,7 @@
 
                     <div>
                         <h2>Quick Actions</h2>
-                        <p>Access your teaching resources</p>
+                        <p>Access teaching resources</p>
                     </div>
 
                     <i class="fa-solid fa-bolt"></i>
@@ -705,22 +703,22 @@
 
                 <div class="quick-actions">
 
-                    <a href="lesson-plans.html">
+                    <a href="./lesson-plans.html">
                         <i class="fa-solid fa-clipboard-list"></i>
                         <span>Lesson Plans</span>
                     </a>
 
-                    <a href="assignments.html">
+                    <a href="./assignments.html">
                         <i class="fa-solid fa-file-pen"></i>
                         <span>Assignments</span>
                     </a>
 
-                    <a href="assessments.html">
+                    <a href="./assessments.html">
                         <i class="fa-solid fa-chart-simple"></i>
                         <span>Assessments</span>
                     </a>
 
-                    <a href="resources.html">
+                    <a href="./resources.html">
                         <i class="fa-solid fa-folder-open"></i>
                         <span>Resources</span>
                     </a>
@@ -728,7 +726,6 @@
                 </div>
 
             </div>
-
 
         </section>
 
@@ -751,25 +748,23 @@
     </main>
 
 
+    <!-- ================= DATE SCRIPT ================= -->
+
     <script>
 
         const today = new Date();
 
-        const optionsDay = {
-            weekday: 'long'
-        };
-
-        const optionsDate = {
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric'
-        };
-
         document.getElementById("currentDay").textContent =
-            today.toLocaleDateString("en-US", optionsDay);
+            today.toLocaleDateString("en-US", {
+                weekday: "long"
+            });
 
         document.getElementById("currentDate").textContent =
-            today.toLocaleDateString("en-US", optionsDate);
+            today.toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric"
+            });
 
     </script>
 
