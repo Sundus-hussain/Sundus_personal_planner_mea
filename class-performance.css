@@ -1,0 +1,193 @@
+/* ================================
+   CLASS PERFORMANCE PAGE
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fb;
+    color: #1f2937;
+}
+
+
+/* MAIN PAGE */
+
+.performance-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* ================================
+   PRINCIPAL NOTE
+================================ */
+
+.performance-note {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 35px;
+}
+
+.performance-note h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.to-line {
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.performance-note p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+
+/* ================================
+   DAILY REPORT SECTION
+================================ */
+
+.report-section h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   DAILY REPORT CARD
+================================ */
+
+.daily-report {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 16px;
+}
+
+.report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.report-header h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.report-header span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* STATUS */
+
+.status {
+    background: #ecfdf5;
+    color: #047857 !important;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+
+/* REPORT TEXT */
+
+.daily-report p {
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.report-footer {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 35px;
+    padding-top: 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.report-footer p {
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .performance-page {
+        padding: 25px 18px;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .performance-note {
+        padding: 20px;
+    }
+
+    .daily-report {
+        padding: 18px;
+    }
+
+    .report-header {
+        align-items: flex-start;
+    }
+
+}
